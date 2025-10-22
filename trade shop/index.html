@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ซื้อขายผลิตภัณฑ์ชุมชน — หน้าแรก</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">ซื้อขายผลิตภัณฑ์ชุมชน</a>
+    <div class="searchbar">
+      <input id="searchInput" placeholder="ค้นหาสินค้า เช่น น้ำพริก ผ้าไหม ฯลฯ">
+      <button id="searchBtn">ค้นหา</button>
+    </div>
+    <nav class="top-actions">
+      <a href="seller.html" class="link">ผู้ขาย</a>
+      <a href="cart.html" id="cartLink" class="cart-btn">ตะกร้า (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <aside class="filters">
+      <h3>หมวดหมู่</h3>
+      <div id="categoryList"></div>
+
+      <h3 style="margin-top:18px">อำเภอ</h3>
+      <select id="districtFilter">
+        <option value="all">ทุกอำเภอ</option>
+      </select>
+
+      <h3 style="margin-top:18px">ช่วงราคา</h3>
+      <div class="price-range">
+        <input id="minPrice" type="number" placeholder="ต่ำสุด (฿)">
+        <input id="maxPrice" type="number" placeholder="สูงสุด (฿)">
+      </div>
+      <button id="applyFilter">ใช้ตัวกรอง</button>
+    </aside>
+
+    <section class="content">
+      <div class="banner">
+        <h2>สินค้าแนะนำภายในจังหวัด</h2>
+        <p>เลือกซื้อสินค้า ผลิตภัณฑ์ชุมชนใกล้บ้าน</p>
+      </div>
+
+      <div id="productGrid" class="grid"></div>
+
+      <div style="text-align:center;margin-top:14px;">
+        <button id="loadMore">โหลดเพิ่มเติม</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">© ซื้อขายผลิตภัณฑ์ชุมชน — ตัวอย่างระบบจำลอง</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

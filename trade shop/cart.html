@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ตะกร้าสินค้า — ซื้อขายผลิตภัณฑ์ชุมชน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">ซื้อขายผลิตภัณฑ์ชุมชน</a>
+    <nav class="top-actions">
+      <a href="seller.html" class="link">ผู้ขาย</a>
+      <a href="cart.html" id="cartLink" class="cart-btn">ตะกร้า (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container cart-page">
+    <h2>ตะกร้าสินค้า</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-summary">
+      <div>ยอดรวม: <strong id="cartTotal">฿0</strong></div>
+      <div>
+        <button id="checkoutNow">ไปชำระเงิน</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">© ซื้อขายผลิตภัณฑ์ชุมชน — ตัวอย่างระบบจำลอง</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

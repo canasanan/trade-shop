@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ชำระเงิน — ซื้อขายผลิตภัณฑ์ชุมชน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="index.html">ซื้อขายผลิตภัณฑ์ชุมชน</a>
+    <nav class="top-actions">
+      <a href="seller.html" class="link">ผู้ขาย</a>
+      <a href="cart.html" id="cartLink" class="cart-btn">ตะกร้า (<span id="cartCount">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="container checkout-page">
+    <h2>ข้อมูลการสั่งซื้อ</h2>
+
+    <div id="orderSummary"></div>
+
+    <h3>ข้อมูลผู้สั่ง</h3>
+    <div class="form">
+      <input id="custName" placeholder="ชื่อผู้สั่ง">
+      <input id="custPhone" placeholder="เบอร์โทรศัพท์">
+      <input id="custAddr" placeholder="ที่อยู่ (รายละเอียดสำหรับจัดส่ง / นัดรับ)">
+      <select id="payMethod">
+        <option value="bank">โอนบัญชีธนาคาร</option>
+        <option value="cod">เก็บเงินปลายทาง (รับเอง)</option>
+      </select>
+      <button id="placeOrder">ยืนยันการสั่งซื้อ</button>
+    </div>
+
+    <div id="orderResult" class="order-result"></div>
+  </main>
+
+  <footer class="footer">© ซื้อขายผลิตภัณฑ์ชุมชน — ตัวอย่างระบบจำลอง</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
